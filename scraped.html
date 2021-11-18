@@ -1,0 +1,314 @@
+<html lang="en-US"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><meta content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/><meta content="_csrf" name="csrf-param"/><meta content="NjM2NGQzZjBmNDk1YjZhYjlkY2Y4ZDNiNWM2ZTBiMDEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" name="csrf-token"/><!-- TODO: Meta --><meta content="Read Super Gene - Chapter 2731 - God Body Evolved online free - Light Novel Full" name="title"/><meta content="Read Super Gene - Chapter 2731 - God Body Evolved online free from your Mobile, Table, PC... Novel Updates Daily " name="description"/><meta content="https://novelfull.com/uploads/thumbs/super-gene-c33ca6fce8-2239c49aee6b961904acf173b7e4602a.jpg" name="image"/><meta content="Super Gene - Chapter 2731 - God Body Evolved" name="keywords"/><title>Read Super Gene - Chapter 2731 - God Body Evolved online free - Light Novel Full</title><link as="font" crossorigin="anonymous" href="/web/fonts/RobotoCondensed-Regular.woff" rel="preload"/><link as="font" crossorigin="anonymous" href="/web/fonts/glyphicons-halflings-regular.woff2" rel="preload"/><link href="/web/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/><link href="/web/images/favicon.ico" rel="icon" type="image/x-icon"/><!--[if lt IE 9]><link rel="stylesheet" href="/web/css/iefix.css"><script defer src="/web/js/html5shiv.min.js"></script><script defer src="/web/js/respond.min.js"></script><![endif]--><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=novelfull.com&amp;callback=_gfp_s_&amp;client=ca-pub-2371791870283090"></script><script async="" src="https://www.google-analytics.com/analytics.js" type="text/javascript"></script><script id="google_shimpl" src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202111110101/show_ads_impl_fy2019.js"></script><script type="text/javascript">
+            var adblock = true;
+            var ajaxSearchUrl = 'https://novelfull.com/ajax-search';
+            var ajaxNovelRateUrl = 'https://novelfull.com/ajax-novel-rate';
+            var ajaxReportChapterUrl = 'https://novelfull.com/ajax-report-chapter';
+            var ajaxUserSettingsUrl = 'https://novelfull.com/ajax-user-settings';
+            var ajaxChapterOptionUrl = 'https://novelfull.com/ajax-chapter-option';
+        </script><!-- <script type="text/javascript" src="/web/js/adframe.js?v=1"></script> --><script src="/web/js/plugins.js" type="text/javascript"></script><script src="/web/js/scripts.js" type="text/javascript"></script><!-- TODO: ExtraScript --><script type="text/javascript">
+        $(document).ready(function() {
+            $navBar = $('.toggle-nav-open');
+            $navBar.on('click', function() {
+                var open = $(this).hasClass('active') ? 'close' : 'open';
+                changeStyle('nav-bar', open);
+                saveStyle('nav-bar', open);
+                $('header').toggle();
+                $('.navbar-breadcrumb').toggle();
+            });
+
+            // Key for the chapter navigation
+            $nextChap = $('#next_chap');
+            $prevChap = $('#prev_chap');
+            $(document).keydown(function (e) {
+                var tag = e.target.tagName.toLowerCase();
+                if (tag == 'input' || tag == 'textarea') return;
+
+                var keypress = e.charCode ? e.charCode : e.keyCode;
+                if (keypress == 39 || keypress == 68) {
+                    if (!$nextChap.attr('disabled')) {
+                        window.location = $nextChap.attr('href');
+                    }
+                } else if (keypress == 37 || keypress == 65) {
+                    if (!$prevChap.attr('disabled')) {
+                        window.location = $prevChap.attr('href');
+                    }
+                }
+            });
+
+            // TODO: Theme
+            $container = $('#container');
+            $chapter = $('#chapter');
+            $chapterContent = $('#chapter-content');
+            var chapterContent = $chapterContent.html();
+            $options = $('#options');
+            $options.show();
+            $optionBackground = $('#option-background');
+            $optionFontFamily = $('#option-font-family');
+            $optionFontSize = $('#option-font-size');
+            $optionLineHeight = $('#option-line-height');
+            $optionFluidSwitch = $('input[type=radio][name=fluid-switch]');
+            $optionNoLineBreak = $('input[type=radio][name=onebreak-switch]');
+            $optionBackground.on('change', function() {
+                changeStyle('background', $(this).val());
+                saveStyle('background', $(this).val());
+            });
+            $optionFontFamily.on('change', function() {
+                changeStyle('font-family', $(this).val());
+                saveStyle('font-family', $(this).val());
+            });
+            $optionFontSize.on('change', function() {
+                changeStyle('font-size', $(this).val());
+                saveStyle('font-size', $(this).val());
+            });
+            $optionLineHeight.on('change', function() {
+                changeStyle('line-height', $(this).val());
+                saveStyle('line-height', $(this).val());
+            });
+            $optionFluidSwitch.on('change', function() {
+                changeStyle('fluid-switch', $(this).val());
+                saveStyle('fluid-switch', $(this).val());
+            });
+            $optionNoLineBreak.on('change', function() {
+                changeStyle('onebreak-switch', $(this).val());
+                saveStyle('onebreak-switch', $(this).val());
+            });
+
+            function changeStyle(style, value) {
+                if (!value) return;
+                switch (style) {
+                    case "background":
+                        $container.css('background-color', value);
+                        if (value == '#232323') {
+                            $container.addClass('dark-background');
+                        } else {
+                            $container.removeClass('dark-background');
+                        }
+                        break;
+                    case "font-family":
+                        $chapterContent.css('font-family', value);
+                        break;
+                    case "font-size":
+                        $chapterContent.css('font-size', value);
+                        break;
+                    case "line-height":
+                        $chapterContent.css('line-height', value);
+                        break;
+                    case "nav-bar":
+                        if ( value == 'open' ) {
+                            $('body').addClass('toggleNav');
+                            $('#container').addClass('active');
+                            $navBar.find('.glyphicon').removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down');
+                            $navBar.addClass('active');
+                        } else {
+                            $navBar.removeClass('active');
+                            $('#container').removeClass('active');
+                            $navBar.find('.glyphicon').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
+                            $('body').removeClass('toggleNav');
+                        }
+                        break;
+                    case "fluid-switch":
+                        if (value == 'yes') {
+                            $chapter.removeClass('container');
+                            $chapter.addClass('container-fluid');
+                        } else {
+                            $chapter.addClass('container');
+                            $chapter.removeClass('container-fluid');
+                        }
+                        break;
+                    case "onebreak-switch":
+                        if (value == 'yes') {
+                            $chapterContent.html(removeLineBreak($chapterContent.html()));
+                        } else {
+                            $chapterContent.html(addLineBreak(chapterContent));
+                        }
+                        break;
+                }
+            }
+
+            function saveStyle(style, value) {
+                // Save to cookies
+                var chapterStyle = getStyle();
+
+                switch (style) {
+                    case "background":
+                        chapterStyle.background = value;
+                        break;
+                    case "font-family":
+                        chapterStyle.fontFamily = value;
+                        break;
+                    case "font-size":
+                        chapterStyle.fontSize = value;
+                        break;
+                    case "line-height":
+                        chapterStyle.lineHeight = value;
+                        break;
+                    case "nav-bar":
+                        chapterStyle.navBar = value;
+                        break;
+                    case "fluid-switch":
+                        chapterStyle.fluidSwitch = value;
+                        break;
+                    case "onebreak-switch":
+                        chapterStyle.onebreakSwitch = value;
+                        break;
+                }
+                var expDate = new Date();
+                expDate.setTime(expDate.getTime() + (7 * 24 * 60 * 60 * 1000));
+                $.cookie("chapter_style", JSON.stringify(chapterStyle), {path: '/', expires: expDate});
+                var settings = {
+                    style: chapterStyle
+                };
+                $.ajax({
+                    method: "POST",
+                    url: ajaxUserSettingsUrl,
+                    data: {
+                        settings: JSON.stringify(settings)
+                    }
+                }).done(function (data) {
+                    console.log(data);
+                });
+            }
+
+            function addLineBreak(content) {
+                var delimiter = '</p>';
+                if (content.indexOf(delimiter) == -1 || content.indexOf('<br/>') > 5 || content.indexOf('<br>') > 5) {
+                    delimiter = '<br/>';
+                    if (content.indexOf(delimiter) == -1) {
+                        delimiter = '<br>';
+                    }
+                }
+                var contentArray = content.split(delimiter);
+                if (contentArray.length == 1) return content;
+                var newContent = '';
+                for (var i in contentArray) {
+                    var contentItem = contentArray[i].trim();
+                    if (contentItem != '<p>') {
+                        newContent += contentItem;
+                        newContent += '<br>';
+                    } 
+                }
+                newContent = newContent.replace(/(<br\s*\/?>){1,}/gi, '<br>');
+                newContent = newContent.replace(/<p><br><br><\/p>/gi, '');
+                return newContent;
+            }
+
+            function removeLineBreak(content) {
+                var newContent = content;
+                newContent = newContent.replace(/(<br\s*\/?>){1,}/gi, '');
+                return newContent;
+            }
+
+            function getStyle() {
+                var chapterStyle = $.cookie("chapter_style");
+                if (chapterStyle) {
+                    chapterStyle = JSON.parse(chapterStyle);
+                } else {
+                    chapterStyle = {};
+                }
+                if (!chapterStyle.background) chapterStyle.background = "#F4F4F4";
+                if (!chapterStyle.fontFamily) chapterStyle.fontFamily = "Arial, sans-serif";
+                if (!chapterStyle.fontSize) chapterStyle.fontSize = "18px";
+                if (!chapterStyle.lineHeight) chapterStyle.lineHeight = "160%";
+                if (!chapterStyle.fluidSwitch) chapterStyle.fluidSwitch = 'no';
+                if (!chapterStyle.onebreakSwitch) chapterStyle.onebreakSwitch = 'no';
+                if (!chapterStyle.navBar) chapterStyle.navBar = 'close';
+                return chapterStyle;
+            }
+
+            var chapterStyle = getStyle();
+            $optionBackground.val(chapterStyle.background);
+            $optionFontFamily.val(chapterStyle.fontFamily);
+            $optionFontSize.val(chapterStyle.fontSize);
+            $optionLineHeight.val(chapterStyle.lineHeight);
+            if (chapterStyle.navBar == 'open') {
+                //$('body').addClass('toggleNav');
+//                $('#container').addClass('active');
+//                $navBar.find('.glyphicon').removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down');
+//                $navBar.addClass('active');
+//                $('header').hide();
+//                $('.navbar-breadcrumb').hide();
+            }
+            $optionFluidSwitch.val([chapterStyle.fluidSwitch]);
+            $optionNoLineBreak.val([chapterStyle.onebreakSwitch]);
+            //changeStyle('onebreak-switch', chapterStyle.onebreakSwitch);
+
+            // TODO: Chapter Nav
+            $('.chapter_jump').on('change', function() {
+                window.location = $(this).val();
+            });
+
+            // TODO: Novel history
+            var novel = {
+                id: 224,
+                name: 'Super Gene',
+                url: '/super-gene.html',
+                chapter: {
+                    id: 995821,
+                    name: 'Chapter 2731 - God Body Evolved',
+                    url: '/super-gene/chapter-2731-god-body-evolved.html',
+                }
+            };
+
+            jQuery(document).ready(function () {
+                var limit = 10;
+                var novels = $.cookie("novels_history");
+                if (novels) novels = JSON.parse(novels);
+                else novels = [];
+
+                for (var i in novels) {
+                    var nv = novels[i];
+                    if (nv.id == novel.id) {
+                        novels.splice(i, 1);
+                        break;
+                    }
+                }
+
+                if (novels.length == limit) {
+                    novels.splice(-1,1);
+                }
+                novels.unshift(novel);
+
+                var expDate = new Date();
+                expDate.setTime(expDate.getTime() + (7 * 24 * 60 * 60 * 1000));
+                $.cookie("novels_history", JSON.stringify(novels), {path: '/', expires: expDate});
+            });
+
+            $('#chapter_error').on('click', function() {
+                console.log('chapter_error');
+                var reason = prompt("Please describe error", "");
+                if (reason != null) {
+                    $.ajax({
+                        method: "GET",
+                        url: ajaxReportChapterUrl,
+                        data: {
+                            chapter: $(this).data('chapter-id'),
+                            reason: reason
+                        }
+                    }).done(function (data) {
+                        console.log(data);
+                    });
+                    alert('Thanks report');
+                }
+            });
+
+            chapterJump(novel.id, novel.chapter.id, novel.chapter.url);
+        });
+    </script><link href="/web/css/style.css" rel="stylesheet"/><link href="/web/css/rateit.css" rel="stylesheet"/><link href="/web/css/custom.css" rel="stylesheet"/><link href="/web/css/responsive.css" rel="stylesheet"/><meta content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=" http-equiv="origin-trial"/><meta content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/><meta content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/><meta content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/><meta content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==" http-equiv="origin-trial"/><meta content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9" http-equiv="origin-trial"/><meta content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9" http-equiv="origin-trial"/><meta content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9" http-equiv="origin-trial"/><meta content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=" http-equiv="origin-trial"/><meta content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/><meta content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/><meta content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/><meta content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==" http-equiv="origin-trial"/><meta content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9" http-equiv="origin-trial"/><meta content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9" http-equiv="origin-trial"/><meta content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9" http-equiv="origin-trial"/><meta content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=" http-equiv="origin-trial"/><meta content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/><meta content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/><meta content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9" http-equiv="origin-trial"/><meta content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==" http-equiv="origin-trial"/><meta content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9" http-equiv="origin-trial"/><meta content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9" http-equiv="origin-trial"/><meta content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9" http-equiv="origin-trial"/><link as="script" href="https://adservice.google.co.in/adsid/integrator.js?domain=novelfull.com" rel="preload"/><script src="https://adservice.google.co.in/adsid/integrator.js?domain=novelfull.com" type="text/javascript"></script><link as="script" href="https://adservice.google.com/adsid/integrator.js?domain=novelfull.com" rel="preload"/><script src="https://adservice.google.com/adsid/integrator.js?domain=novelfull.com" type="text/javascript"></script><script async="" src="https://fundingchoicesmessages.google.com/i/ca-pub-2371791870283090?ers=2"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxVCaX5ekEIHU8PxAVIbhn431TkIr9qTql_cBPDYQ8QbcoMtudsuWrS7soqLaAGfaXJPbYfoVcZs3oEwopyT9w==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjM3MjIxMTk3LDM2OTAwMDAwMF0sIjZFMDUzNjg4LTFBRDAtNDlEOC04QTk4LTg3NkQ5MkFCRjAzNCIsIkJDOTUyNEMxLUVDREEtNDJENy1COUUzLUFCMDVGNTc2QTBCRiIsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL25vdmVsZnVsbC5jb20vc3VwZXItZ2VuZS9jaGFwdGVyLTI3MzEtZ29kLWJvZHktZXZvbHZlZC5odG1sIixudWxsLFtdXQ"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxW6E8JwioBDA9j4sgniS33tPLxpjL0lCA0FvvqwlyfWQLlPRL2jY_DLiAzISX4MkZjDtlXXRRWwk6dCgWRJJ3n_H2Vm9s5P1ZRicXtdqCV38XfY8cE3OGevkSdYuIx1EE-ChFpG0IO9T7bgfWPB03uvAgDKKxx1Qqj22fKTKyuj8oFJ5w1kAHdpH-w=?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjM3MjIxMTk3LDg3MTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsMTBdXSwiaHR0cHM6Ly9ub3ZlbGZ1bGwuY29tL3N1cGVyLWdlbmUvY2hhcHRlci0yNzMxLWdvZC1ib2R5LWV2b2x2ZWQuaHRtbCIsbnVsbCxbXV0"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxWF0Drebe7nLO-DyP0xgGlyPLHUIahyoW4HOFxnqJVe65FcUo8OZeM-fr7vkbz9cGrZD8g7EAz3AJ-pZmBDfENOxKGVZtiCYx-MGRElaGugDFwsZpoEr2DigZfmvX5Nq6N-vwQVRdEA87Vw7f6k6n_tomuojQ-pYD9Bu7EUs9vhOAzfLEYvUSwB9iU=?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjM3MjIxMTk4LDk5MzAwMDAwMF0sbnVsbCxudWxsLG51bGwsWzEsWzcsMTAsNl1dLCJodHRwczovL25vdmVsZnVsbC5jb20vc3VwZXItZ2VuZS9jaGFwdGVyLTI3MzEtZ29kLWJvZHktZXZvbHZlZC5odG1sIixudWxsLFtdXQ"></script></head><body><div id="wrapper" style="height: auto !important;"><header class="header" style="display: block"><div class="navbar navbar-default navbar-static-top" id="nav" role="navigation"><div class="container"><div class="navbar-header"><button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Show menu</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><h5><a class="header-logo" href="/" title="Read novel online"><img src="/uploads/thumbs/banner-75b2b7a774-e3b318a6dc29b96947534819abc91cd3.png"/></a></h5></div><div class="navbar-collapse collapse"><ul class="control nav navbar-nav"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title=""><span class="glyphicon glyphicon-list"></span> Novel List <span class="caret"></span></a><ul class="dropdown-menu" role="menu"><li><a href="/latest-release-novel" title="Latest Release">Latest Release</a></li><li><a href="/hot-novel" title="Hot Novel">Hot Novel</a></li><li><a href="/completed-novel" title="Completed Novel">Completed Novel</a></li><li><a href="/most-popular" title="Most Popular">Most Popular</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title=""><span class="glyphicon glyphicon-list"></span> Genre <span class="caret"></span></a><div class="dropdown-menu multi-column"><div class="row"><div class="col-md-4"><ul class="dropdown-menu"><li><a href="/genre/Shounen" title="Shounen">Shounen</a></li><li><a href="/genre/Harem" title="Harem">Harem</a></li><li><a href="/genre/Comedy" title="Comedy">Comedy</a></li><li><a href="/genre/Martial+Arts" title="Martial Arts">Martial Arts</a></li><li><a href="/genre/School+Life" title="School Life">School Life</a></li><li><a href="/genre/Mystery" title="Mystery">Mystery</a></li><li><a href="/genre/Shoujo" title="Shoujo">Shoujo</a></li><li><a href="/genre/Romance" title="Romance">Romance</a></li><li><a href="/genre/Sci-fi" title="Sci-fi">Sci-fi</a></li><li><a href="/genre/Gender+Bender" title="Gender Bender">Gender Bender</a></li><li><a href="/genre/Mature" title="Mature">Mature</a></li><li><a href="/genre/Fantasy" title="Fantasy">Fantasy</a></li></ul></div><div class="col-md-4"><ul class="dropdown-menu"><li><a href="/genre/Horror" title="Horror">Horror</a></li><li><a href="/genre/Drama" title="Drama">Drama</a></li><li><a href="/genre/Tragedy" title="Tragedy">Tragedy</a></li><li><a href="/genre/Supernatural" title="Supernatural">Supernatural</a></li><li><a href="/genre/Ecchi" title="Ecchi">Ecchi</a></li><li><a href="/genre/Xuanhuan" title="Xuanhuan">Xuanhuan</a></li><li><a href="/genre/Adventure" title="Adventure">Adventure</a></li><li><a href="/genre/Action" title="Action">Action</a></li><li><a href="/genre/Psychological" title="Psychological">Psychological</a></li><li><a href="/genre/Xianxia" title="Xianxia">Xianxia</a></li><li><a href="/genre/Wuxia" title="Wuxia">Wuxia</a></li><li><a href="/genre/Historical" title="Historical">Historical</a></li></ul></div><div class="col-md-4"><ul class="dropdown-menu"><li><a href="/genre/Slice+of+Life" title="Slice of Life">Slice of Life</a></li><li><a href="/genre/Seinen" title="Seinen">Seinen</a></li><li><a href="/genre/Lolicon" title="Lolicon">Lolicon</a></li><li><a href="/genre/Adult" title="Adult">Adult</a></li><li><a href="/genre/Josei" title="Josei">Josei</a></li><li><a href="/genre/Sports" title="Sports">Sports</a></li><li><a href="/genre/Smut" title="Smut">Smut</a></li><li><a href="/genre/Mecha" title="Mecha">Mecha</a></li><li><a href="/genre/Yaoi" title="Yaoi">Yaoi</a></li><li><a href="/genre/Shounen+Ai" title="Shounen Ai">Shounen Ai</a></li><li><a href="/genre/History" title="History">History</a></li><li><a href="/genre/Reincarnation" title="Reincarnation">Reincarnation</a></li></ul></div></div></div></li><li class="dropdown" id="options" style="display: list-item;"><a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><span class="glyphicon glyphicon-cog"></span> Options <span class="caret"></span></a><div class="dropdown-menu dropdown-menu-right settings"><form class="form-horizontal"><div class="form-group form-group-sm"><label class="col-sm-2 col-md-5 control-label" for="truyen-background">Background</label><div class="col-sm-5 col-md-7"><select class="form-control" id="option-background"><option value="#F4F4F4">Light gray</option><option value="#E9EBEE">Light blue</option><option value="#F4F4E4">Light yellow</option><option value="#EAE4D3">Sepia</option><option value="#D5D8DC">Dark blue</option><option value="#FAFAC8">Dark yellow</option><option value="#EFEFAB">Wood grain</option><option value="#FFF">White</option><option value="#232323">Dark</option></select></div></div><div class="form-group form-group-sm"><label class="col-sm-2 col-md-5 control-label" for="font-chu">Font family</label><div class="col-sm-5 col-md-7"><select class="form-control" id="option-font-family"><option value="'Palatino Linotype', serif">Palatino Linotype</option><option value="Bookerly, serif">Bookerly</option><option value="Minion, serif">Minion</option><option value="'Segoe UI', sans-serif">Segoe UI</option><option value="Roboto, sans-serif">Roboto</option><option value="'Roboto Condensed', sans-serif">Roboto Condensed</option><option value="'Patrick Hand', sans-serif">Patrick Hand</option><option value="'Noticia Text', sans-serif">Noticia Text</option><option value="'Times New Roman', serif">Times New Roman</option><option value="Verdana, sans-serif">Verdana</option><option value="Tahoma, sans-serif">Tahoma</option><option value="Arial, sans-serif">Arial</option></select></div></div><div class="form-group form-group-sm"><label class="col-sm-2 col-md-5 control-label" for="size-chu">Font size</label><div class="col-sm-5 col-md-7"><select class="form-control" id="option-font-size"><option value="16px">16</option><option value="18px">18</option><option value="20px">20</option><option value="22px">22</option><option value="24px">24</option><option value="26px">26</option><option value="28px">28</option><option value="30px">30</option><option value="32px">32</option><option value="34px">34</option><option value="36px">36</option><option value="38px">38</option><option value="40px">40</option></select></div></div><div class="form-group form-group-sm"><label class="col-sm-2 col-md-5 control-label" for="line-height">Line
+                                            height</label><div class="col-sm-5 col-md-7"><select class="form-control" id="option-line-height"><option value="100%">100%</option><option value="120%">120%</option><option value="140%">140%</option><option value="160%">160%</option><option value="180%">180%</option><option value="200%">200%</option></select></div></div><div class="form-group form-group-sm"><label class="col-sm-2 col-md-5 control-label">Full frame</label><div class="col-sm-5 col-md-7"><label class="radio-inline" for="fluid-yes"><input id="fluid-yes" name="fluid-switch" type="radio" value="yes"/> Yes</label><label class="radio-inline" for="fluid-no"><input checked="" id="fluid-no" name="fluid-switch" type="radio" value="no"/> No</label></div></div><div class="form-group form-group-sm"><label class="col-sm-2 col-md-5 control-label">No line break</label><div class="col-sm-5 col-md-7"><label class="radio-inline" for="onebreak-yes"><input id="onebreak-yes" name="onebreak-switch" type="radio" value="yes"/> Yes</label><label class="radio-inline" for="onebreak-no"><input checked="" id="onebreak-no" name="onebreak-switch" type="radio" value="no"/> No</label></div></div></form></div></li></ul><form action="/search" class="navbar-form navbar-right"><div class="input-group search-holder"><input class="form-control" id="search-input" name="keyword" placeholder="Search..." type="search" value=""/><div class="input-group-btn"><button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button></div></div><div class="list-group list-search-res hide"></div></form><div class="hide" id="login-status"></div></div><!--/.nav-collapse --></div></div></header><main class="" id="container" style="background-color: rgb(244, 244, 244); height: auto !important;"><div class="navbar-breadcrumb" style="display: block"><div class="container breadcrumb-container"><ol class="breadcrumb"><li><a href=""><span class="glyphicon glyphicon-home"></span></a><a href="/" title="Read novel online"><span>Novel</span></a></li><li><h1><a href="/super-gene.html" title="Super Gene"><span>Super Gene</span></a></h1></li><li class="active"><a href="/super-gene/chapter-2731-god-body-evolved.html" title="Chapter 2731 - God Body Evolved"><span>Chapter 2731 - God Body Evolved</span></a></li></ol></div></div><div class="chapter container" id="chapter" style="height: auto !important;"><div class="row" style="height: auto !important;"><div class="col-xs-12" style="height: auto !important; min-height: 0px !important;"><a class="truyen-title" href="/super-gene.html" title="Super Gene">Super Gene</a><h2><a class="chapter-title" href="/super-gene/chapter-2731-god-body-evolved.html" title="Chapter 2731 - God Body Evolved"><span class="chapter-text">Chapter 2731 - God Body Evolved<span></span></span></a></h2><hr class="chapter-start"/><button class="btn btn-responsive btn-success toggle-nav-open" type="button"><span class="glyphicon glyphicon-menu-up"></span></button><div class="chapter-nav" id="chapter-nav-top"><div class="btn-group"><a class="btn btn-success" href="/super-gene/chapter-2730-crazy-consume.html" id="prev_chap" title="Chapter 2730 - Crazy Consume"><span class="glyphicon glyphicon-chevron-left"></span><span class="hidden-xs">Prev Chapter</span></a><button class="btn btn-success chapter_jump" type="button"><span class="glyphicon glyphicon-list-alt"></span></button><a class="btn btn-success" href="/super-gene/chapter-2732-weird-scene-like-a-tide.html" id="next_chap" title="Chapter 2732 - Weird Scene Like a Tide"><span class="hidden-xs">Next Chapter</span><span class="glyphicon glyphicon-chevron-right"></span></a></div></div><hr class="chapter-end"/><div class="chapter-c" id="chapter-content" style="font-family: Arial, sans-serif, serif; font-size: 18px; line-height: 160%; height: auto !important;"><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- full thich ung --><ins class="adsbygoogle" data-ad-client="ca-pub-2371791870283090" data-ad-format="auto" data-ad-slot="2009706278" data-ad-status="filled" data-adsbygoogle-status="done" data-full-width-responsive="true" style="display: block; height: 280px;"><ins aria-label="Advertisement" id="aswift_1_expand" style="border: none; height: 280px; width: 940px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;" tabindex="0" title="Advertisement"><ins id="aswift_1_anchor" style="border: none; height: 280px; width: 940px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block; overflow: visible;"><iframe allow="attribution-reporting" allowfullscreen="true" allowtransparency="true" data-google-container-id="a!2" data-google-query-id="CP_zmJ-0ofQCFYhZYAodWAELyQ" data-load-complete="true" frameborder="0" height="280" hspace="0" id="aswift_1" marginheight="0" marginwidth="0" name="aswift_1" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2371791870283090&amp;output=html&amp;h=280&amp;slotname=2009706278&amp;adk=1500500420&amp;adf=697550438&amp;pi=t.ma~as.2009706278&amp;w=940&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1637221196&amp;rafmt=1&amp;psa=0&amp;format=940x280&amp;url=https%3A%2F%2Fnovelfull.com%2Fsuper-gene%2Fchapter-2731-god-body-evolved.html&amp;flash=0&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiOC4wLjAiLCJ4ODYiLCIiLCI5NS4wLjQ2MzguNjkiLFtdLG51bGwsbnVsbCwiNjQiXQ..&amp;dt=1637221195637&amp;bpp=5&amp;bdt=1301&amp;idt=637&amp;shv=r20211111&amp;mjsv=m202111110101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=6212250203119&amp;frm=20&amp;pv=1&amp;ga_vid=1289739030.1637221196&amp;ga_sid=1637221196&amp;ga_hid=1165436453&amp;ga_fc=1&amp;u_tz=330&amp;u_his=2&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;dmc=8&amp;adx=39&amp;ady=280&amp;biw=1017&amp;bih=575&amp;scr_x=0&amp;scr_y=0&amp;oid=2&amp;pvsid=3195168061952637&amp;pem=338&amp;tmod=1008378747&amp;eae=0&amp;fc=1920&amp;brdim=10%2C10%2C10%2C10%2C1366%2C0%2C1050%2C708%2C1034%2C575&amp;vis=1&amp;rsz=o%7C%7CeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;xpc=FDX3Ruk2qx&amp;p=https%3A//novelfull.com&amp;dtd=644" style="left:0;position:absolute;top:0;border:0;width:940px;height:280px;" vspace="0" width="940"></iframe></ins></ins></ins><script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><p></p><p></p><p></p><h1 class="chapter-title">Chapter 2731 God Body Evolved</h1><div>“Han Sen really isn’t bad. It is impressive for a crystallizer to last half an hour inside there. He is a very rare specimen,” Li Chun Qiu said while staring into the water.<p></p><p>But after another half hour, Han Sen still hadn’t emerged from the Good Fortune Pool. Now, even Li Chun Qiu’s face looked stunned.</p><p>“It has been an hour, and he still isn’t out yet… This should be what a primitive deified can achieve, right?” Shale said with shock.</p><div><!-- QC noi dung 2 --><p></p></div><p></p><p>Li Chun Qiu nodded and said, “According to our best theory, half-deifieds can only last half an hour at the most. Unless they manage to trigger a vision, that is. Then, they can last more than an hour. A primitive deified can last one hour…” Li Chun Qiu trailed off. He was wondering why Han Sen was taking so long, and why he had yet to come out.</p><p>Little did they knew, Han Sen himself was just as confused as they were. He had already consumed more power than his body had previously contained, but he wasn’t stopping there. He felt like he could still absorb more and more. It was like his nervous system was impaired, and he didn’t know when to feel full.</p><p>“Deified gene +1. Deified progress: 30/100”</p><p>Suddenly, a voice sounded inside Han Sen’s ears. It shocked him. When he heard what it said, he was so happy.</p><p>“Holy sh*t! The water inside the Good Fortune Pool can increase my tally of deified genes. Is it just like the Very High predicted? Are these waters here because the deified genes melded with the water itself…” Han Sen was floored. It had been so long since he had earned a deified gene. He couldn’t believe he could get them here.</p><p>Han Sen had tried to consume deified genes before, but he hadn’t been able to digest them. These mutated deified genes, however, were being absorbed without issue.</p><p>Right now, Han Sen didn’t care how long he had to stay underwater. This was a fantastic opportunity, so he wasn’t going to stop until he was stuffed to the gills.</p><p>“Deified gene +1. Deified progress: 40/100…”</p><p>Not long later, Han Sen’s brain played a similar announcement.</p><p>After hearing the announcement again, Han Sen tried even harder to absorb the power of the Good Fortune Water. His body was sinking lower, driving him deeper and deeper into the pool. And the further he went, the stronger the gene power became.</p><p>Han Sen floated inside the Good Fortune Pool, continuing to absorb what he could. Shale and Li Chun Qiu were still on the outside, looking pretty freaked out. They had been waiting for two hours by this point, and they saw no sign of Han Sen coming back to the surface.</p><p>That itself was a big problem. Shale was a deified when he entered the Good Fortune Pool, and he had even triggered a vision, but he only lasted two hours.</p><p>Now, Han Sen had been in there almost as long as Shale, and he yet to show a sign of coming back out. This was so strange.</p><p>“Han Sen’s body should still be half-deified. He must have taken in so much gene power. Even if it was all somehow beneficial for him, it should have filled his body to overflowing by now. How can he still be down there?” Shale asked in a whisper.</p><p>Li Chun Qiu looked into the water but didn’t speak. He was trying to guess what might have happened to Han Sen. He considered many possibilities, but he didn’t think any of them made sense. In short, unless Han Sen had become deified, the Good Fortune Pool’s gene power should have blown him up by now.</p><div class="ads ads-holder ads-middle text-center"><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" data-ad-client="ca-pub-2371791870283090" data-ad-format="fluid" data-ad-layout="in-article" data-ad-slot="8264086020" data-ad-status="filled" data-adsbygoogle-status="done" style="display: block; text-align: center; height: 200px;"><ins aria-label="Advertisement" id="aswift_2_expand" style="border: none; height: 200px; width: 940px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;" tabindex="0" title="Advertisement"><ins id="aswift_2_anchor" style="border: none; height: 200px; width: 940px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe allow="attribution-reporting" allowfullscreen="true" allowtransparency="true" data-google-container-id="a!3" data-google-query-id="COH2mJ-0ofQCFZpiiwod5C0DNw" data-load-complete="true" frameborder="0" height="200" hspace="0" id="aswift_2" marginheight="0" marginwidth="0" name="aswift_2" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2371791870283090&amp;output=html&amp;h=200&amp;slotname=8264086020&amp;adk=1608765201&amp;adf=2925747724&amp;pi=t.ma~as.8264086020&amp;w=940&amp;fwrn=4&amp;lmt=1637221196&amp;rafmt=11&amp;psa=0&amp;format=940x200&amp;url=https%3A%2F%2Fnovelfull.com%2Fsuper-gene%2Fchapter-2731-god-body-evolved.html&amp;flash=0&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiOC4wLjAiLCJ4ODYiLCIiLCI5NS4wLjQ2MzguNjkiLFtdLG51bGwsbnVsbCwiNjQiXQ..&amp;dt=1637221195642&amp;bpp=2&amp;bdt=1306&amp;idt=651&amp;shv=r20211111&amp;mjsv=m202111110101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=0x0%2C940x280&amp;nras=1&amp;correlator=6212250203119&amp;frm=20&amp;pv=1&amp;ga_vid=1289739030.1637221196&amp;ga_sid=1637221196&amp;ga_hid=1165436453&amp;ga_fc=1&amp;rplot=4&amp;u_tz=330&amp;u_his=2&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;dmc=8&amp;adx=39&amp;ady=2060&amp;biw=1017&amp;bih=575&amp;scr_x=0&amp;scr_y=0&amp;oid=2&amp;pvsid=3195168061952637&amp;pem=338&amp;tmod=1008378747&amp;eae=0&amp;fc=1920&amp;brdim=10%2C10%2C10%2C10%2C1366%2C0%2C1050%2C708%2C1034%2C575&amp;vis=1&amp;rsz=o%7C%7CeEbr%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=1&amp;fsb=1&amp;xpc=ez6rlCQF1n&amp;p=https%3A//novelfull.com&amp;dtd=658" style="left:0;position:absolute;top:0;border:0;width:940px;height:200px;" vspace="0" width="940"></iframe></ins></ins></ins><script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><p>If Han Sen was becoming deified inside the Good Fortune Pool, there should have been a big movement on the surface to let them know what had happened. They would have noticed something like that. The pool shouldn’t have been as quiet as it was right now.</p><p>But it didn’t seem possible that Han Sen was dying down there, either. Creatures had died in the pool before, overloaded by the power that they had taken in. But as they died, their powers would explode rather violently. Shale and Li Chun Qiu would sense it if that happened.</p><p>“What is he doing under there?” Li Chun Qiu couldn’t contain his curiosity. Although he was in charge of the Good Fortune Pool, he couldn’t just hop in and check.</p><p>The Good Fortune Pool had incredible gene powers, but the ingredients that composed it were too complicated. Once someone reached the maximum level of harmful gene powers they could tolerate and left the pool, they could begin to slowly purge those destructive powers. However, their core genes would be forever affected. They would live with side effects from then on.</p><p>These side effects didn’t affect one’s body and practice, but if that person wanted to enter the Good Fortune Pool again, the rate at which they accumulated harmful gene powers would be greatly increased. Entering the water again could be very dangerous for them.</p><p>So, ordinary people could only earn benefits the first time they entered the Good Fortune Pool. Entering the Good Fortune Pool again would make these side effects get worse. After a few times, most people couldn’t even touch the water anymore.</p><p>That was the situation that Li Chun Qiu found himself in. He wanted to dive into the pool and take a look, but he simply couldn’t.</p><p>Shale had only just entered the Good Fortune Pool, so he couldn’t go in again either. The two of them had no choice but to watch from the edge of the pool. They hoped that Han Sen would come back out, so they could learn what he had managed to accomplish down there.</p><p>“Deified gene +1. Deified progress: 56/100”</p><p>Han Sen was still frantically pulling in the gene powers of the Good Fortune Water. His deified progress was moving steadily forward.</p><p>“Am I going to become deified?” Han Sen was so excited. If he could become deified here, then in the eyes of the universe, he would have the basic authority to start his own race. That meant he could represent humans and start a war for a lantern in the Geno Hall. Humans could become a high race.</p><p>Fighting the Extreme King or a big race like the Sky wouldn’t be realistic. He would have to find some higher races that only had a couple deifieds, or maybe none at all. If that happened, Han Sen would be confident in his ability to pick on them.</p><p>Of course, every high race had connections. He couldn’t just start a war with whoever he wanted. Just like the Rebate. If anyone tried to start a lantern war with them, they would have to think about how Sky Palace would react.</p><p>Han Sen wasn’t worried about it too much, though. He just had to find a high race that was allied with the Extreme King, and then snuff out their lantern. There was no love lost between him and the Extreme King anyway, so battling them was going to happen some day regardless.</p><p>“Deified gene +1. Deified progress: 98/100”</p><p>As time went by, Han Sen’s deified progress went higher and higher. Han Sen could feel the power collecting inside of him. There were changes occurring in his body that felt like they could flip the sky and the earth.</p><p>These changes weren’t connected to any of his four geno arts. It was his body itself that was changing. It was a process that he couldn’t have begun to describe. His flesh, his bones, his organs, and every cell in his body was changing.</p><p>“Deified gene +1. Deified progress: 100/100… God body evolving…”</p><p>When his deified progress reached 100, Han Sen felt like his body was a flower, and the petals were falling away one by one. He felt like a serpent, peeling off its skin. The feeling was beyond anything that Han Sen had previously imagined, and although it was incredibly strange, it also felt amazingly good.</p></div><div align="left">
+        If you find any errors ( broken links, non-standard content, etc.. ), Please let us know &lt; report chapter &gt; so we can fix it as soon as possible. </div></div><hr class="chapter-end"/><div class="chapter-nav" id="chapter-nav-top"><div class="btn-group"><a class="btn btn-success" href="/super-gene/chapter-2730-crazy-consume.html" id="prev_chap" title="Chapter 2730 - Crazy Consume"><span class="glyphicon glyphicon-chevron-left"></span><span class="hidden-xs">Prev Chapter</span></a><button class="btn btn-success chapter_jump" type="button"><span class="glyphicon glyphicon-list-alt"></span></button><a class="btn btn-success" href="/super-gene/chapter-2732-weird-scene-like-a-tide.html" id="next_chap" title="Chapter 2732 - Weird Scene Like a Tide"><span class="hidden-xs">Next Chapter</span><span class="glyphicon glyphicon-chevron-right"></span></a></div></div><div class="text-center"><button class="btn btn-warning" data-chapter-id="995821" id="chapter_error" type="button"><span class="glyphicon glyphicon-exclamation-sign"></span> Report chapter
+    </button><!--    <button type="button" class="btn btn-info" id="chapter_comment">--><!--        <span class="glyphicon glyphicon-comment"></span> Comment--><!--    </button>--></div><div class="bg-info text-center visible-md visible-lg box-notice">
+    Tip: You can use left, right, A and D keyboard keys to browse between chapters.
+</div><div class="col-xs-12"></div><script async="" data-ad-client="ca-pub-2371791870283090" data-checked-head="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></div></div></div></main><footer class="footer"><div class="container"><div class="hidden-xs col-sm-5"><p>
+	© Copyright NovelFull.Com. All Rights Reserved.</p></div><ul class="col-xs-12 col-sm-7 list-unstyled"><li class="text-right pull-right"><a href="/contact" title="Contact">Contact</a> -
+                    <a href="/tos" title="ToS">ToS</a> -
+                    <a href="/sitemap.xml" target="_blank">Sitemap</a><a class="backtop" href="#" rel="nofollow" title=""><span class="glyphicon glyphicon-upload"></span></a></li></ul></div></footer></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-101484867-2"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-101484867-2');
+</script><ins class="adsbygoogle adsbygoogle-noablate" data-ad-status="unfilled" data-adsbygoogle-status="done" style="display: none !important;"><ins aria-label="Advertisement" id="aswift_0_expand" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;" tabindex="0" title="Advertisement"><ins id="aswift_0_anchor" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe allow="attribution-reporting" allowfullscreen="true" allowtransparency="true" data-google-container-id="a!1" data-load-complete="true" frameborder="0" hspace="0" id="aswift_0" marginheight="0" marginwidth="0" name="aswift_0" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2371791870283090&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1637221196&amp;plat=1%3A1024%2C2%3A1024%2C3%3A32%2C4%3A32%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fnovelfull.com%2Fsuper-gene%2Fchapter-2731-god-body-evolved.html&amp;ea=0&amp;flash=0&amp;pra=5&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiOC4wLjAiLCJ4ODYiLCIiLCI5NS4wLjQ2MzguNjkiLFtdLG51bGwsbnVsbCwiNjQiXQ..&amp;dt=1637221195629&amp;bpp=8&amp;bdt=1293&amp;idt=604&amp;shv=r20211111&amp;mjsv=m202111110101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=6212250203119&amp;frm=20&amp;pv=2&amp;ga_vid=1289739030.1637221196&amp;ga_sid=1637221196&amp;ga_hid=1165436453&amp;ga_fc=1&amp;u_tz=330&amp;u_his=2&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1017&amp;bih=575&amp;scr_x=0&amp;scr_y=0&amp;oid=2&amp;pvsid=3195168061952637&amp;pem=338&amp;tmod=1008378747&amp;eae=2&amp;fc=1920&amp;brdim=10%2C10%2C10%2C10%2C1366%2C0%2C1050%2C708%2C1034%2C575&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=637" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" vspace="0"></iframe></ins></ins></ins><iframe name="googlefcPresent" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="__uspapiLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcInactive" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcLoaded" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe height="0" src="https://www.google.com/recaptcha/api2/aframe" style="display: none;" width="0"></iframe></body><!-- Global site tag (gtag.js) - Google Analytics --><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20211111/r20190131/zrt_lookup.html" style="display: none;"></iframe></html>
