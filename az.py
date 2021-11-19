@@ -31,6 +31,7 @@ password = WebDriverWait(driver, 10).until(
 password.send_keys("Password@1234")
 password.send_keys(Keys.RETURN)
 driver.get(url)
+questions = []
 
 
 
@@ -44,7 +45,10 @@ for question_container in question_containers:
     questionBlock = WebDriverWait(question_container, 20).until(
             EC.presence_of_element_located((By.CLASS_NAME, "question_block"))
     )    
-    print(questionBlock.get_attribute('innerHTML'))
+    questions.append(questionBlock.get_attribute('innerHTML'))
+soup = BeautifulSoup(questions, 'html.parser')
+with open('questions.txt', 'w') as file:
+    file.write(str(soup.encode("utf-8")))
 
-
-time.sleep(5)    
+time.sleep(5) 
+driver.quit()   
