@@ -33,9 +33,9 @@ for question in questions:
     cardText = WebDriverWait(question, 10).until(
             EC.presence_of_element_located((By.CLASS_NAME, "card-text"))
     )
-    questionChoices = WebDriverWait(question, 10).until(
-            EC.presence_of_element_located((By.CLASS_NAME, "question-choices-container"))
-    )
+    # questionChoices = WebDriverWait(question, 10).until(
+    #         EC.presence_of_element_located((By.CLASS_NAME, "question-choices-container"))
+    # )
     print(cardText.get_attribute('innerHTML'))
        
     
