@@ -19,6 +19,20 @@ url = "https://www.itexams.com/exam/AZ-104?"
 
 driver.get(url)
 print(driver.title)
+login = driver.find_element(By.LINK_TEXT,"Login")
+login.click()
+username = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "id_username"))
+    )
+username.send_keys("rounakagrawal")
+password = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, "id_password"))
+    )
+password.send_keys("Password@1234")
+password.send_keys(Keys.RETURN)
+driver.get(url)
+
+
 
 question_containers = driver.find_elements(By.CLASS_NAME,'card')
 for question_container in question_containers:
@@ -27,6 +41,10 @@ for question_container in question_containers:
             EC.presence_of_element_located((By.CLASS_NAME, "show_answer"))
     )    
     showAnswer.click()
+    questionBlock = WebDriverWait(question_container, 20).until(
+            EC.presence_of_element_located((By.CLASS_NAME, "question_block"))
+    )    
+    print(questionBlock.get_attribute('innerHTML'))
 
 
 time.sleep(5)    
